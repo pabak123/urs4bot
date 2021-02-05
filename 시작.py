@@ -97,4 +97,4 @@ async def on_reaction_add(reaction, user):
         await reaction.message.delete()
 
 
-client.run('ODA2ODI0NjIzMzAyNzcwNzE2.YBvD_A.enHwGAC81YcF3g_njPBwD_PbZAs')
+client.run('TOKEN')
