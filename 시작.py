@@ -1,4 +1,5 @@
 import discord
+import os
 
 client = discord.Client()
 
@@ -97,4 +98,5 @@ async def on_reaction_add(reaction, user):
         await reaction.message.delete()
 
 
-client.run('TOKEN')
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
