@@ -13,6 +13,64 @@ async def on_ready():
 @client.event
 async def on_message(message):
 
+if message.content.startswith('루사야 감도'):
+        await message.channel.send("DPI 800 감도 29 수직감도 1")
+
+    if message.content.startswith('루사야 모니터'):
+        await message.channel.send("95")
+
+    if message.content.startswith('루사야 구독'):
+        await message.channel.send("https://www.twitch.tv/products/vlg_urs4")
+
+	if message.content.startswith('루사야 디스코드'):
+        await message.channel.send("https://discord.gg/pCKdeG2yQx")
+
+    if message.content.startswith('루사야 마우스'):
+        await message.channel.send("G프로 무선")
+
+    if message.content.startswith('루사야 사양'):
+        await message.channel.send("CPU:i7-9700k RAM:16GB 글카:2080super")
+
+    if message.content.startswith('루사야 설정'):
+        await message.channel.send("안티중간 텍스쳐중간 올매낮")
+
+    if message.content.startswith('루사야 장비'):
+        await message.channel.send("마우스 히카리협찬 키보드 스피어협찬 *협찬빨*")
+
+    if message.content.startswith('루사야 인성'):
+        await message.channel.send("매우 나쁨")
+
+    if message.content.startswith('루사야 여자친구'):
+        await message.channel.send("ㅋㅋ")
+
+    if message.content.startswith('루사야 여친'):
+        await message.channel.send("너 밴 있겠냐?")
+
+    if message.content.startswith('루사야 허리'):
+        await message.channel.send("ㅋㅋ 어디갔누")
+
+    if message.content.startswith('루사야 해상도'):
+        await message.channel.send("1920x1080")
+
+    if message.content.startswith('루사야 해상도'):
+        await message.channel.send("1920x1080")
+
+    if message.content.startswith('루사야 키보드'):
+        await message.channel.send("이동수거 레오폴드")
+
+    if message.content.startswith('루사야 티어'):
+        await message.channel.send("브론즈4")
+
+    if message.content.startswith('루사야 패드'):
+        await message.channel.send("아티산")
+
+    if message.content.startswith('루사야 후원'):
+        await message.channel.send("https://twip.kr/vlg_urs4")
+
+    if message.content.startswith('루사야 유튜브'):
+        await message.channel.send("https://www.youtube.com/channel/UC_xt16WauJu5CJoHF_59Vug")
+
+    
     if message.content.startswith('루사야 나봇'):
         embed = discord.Embed(title="우루사 나이트봇 명령어 X 디스코드 루사봇", description="https://nightbot.tv/t/vlg_urs4/commands", color=0xff9a00) # Embed의 기본 틀(색상, 메인 제목, 설명)을 잡아줍니다
         embed.set_footer(text="수정은 K.G#9820로 디엠주세요! • ❌:메세지 삭제") # 하단에 들어가는 조그마한 설명을 잡아줍니다
