@@ -6,14 +6,14 @@ client = discord.Client()
 @client.event
 async def on_ready():
     print("루사봇이 성공적으로 실행되었습니다.")
-    game = discord.Game('루사야 도움말')
+    game = discord.Game('루사야 도움말을 쳐보세요!')
     await client.change_presence(status=discord.Status.online, activity=game)
 
 
 @client.event
 async def on_message(message):
 
-if message.content.startswith('루사야 감도'):
+    if message.content.startswith('루사야 감도'):
         await message.channel.send("DPI 800 감도 29 수직감도 1")
 
     if message.content.startswith('루사야 모니터'):
@@ -21,9 +21,6 @@ if message.content.startswith('루사야 감도'):
 
     if message.content.startswith('루사야 구독'):
         await message.channel.send("https://www.twitch.tv/products/vlg_urs4")
-
-	if message.content.startswith('루사야 디스코드'):
-        await message.channel.send("https://discord.gg/pCKdeG2yQx")
 
     if message.content.startswith('루사야 마우스'):
         await message.channel.send("G프로 무선")
@@ -39,6 +36,11 @@ if message.content.startswith('루사야 감도'):
 
     if message.content.startswith('루사야 인성'):
         await message.channel.send("매우 나쁨")
+
+    if message.content.startswith('루사야 봇'):
+        embed = discord.Embed(title="루사 봇을 초대하려면 여기를 클릭해주세요!", description="https://discord.com/api/oauth2/authorize?client_id=806824623302770716&permissions=0&scope=bot", color=0xff9a00) # Embed의 기본 틀(색상, 메인 제목, 설명)을 잡아줍니다
+        embed.set_footer(text="파란색 글자를 클릭해주세요!") # 하단에 들어가는 조그마한 설명을 잡아줍니다
+        msg = await message.channel.send(embed=embed) # embed를 포함 한 채로 메시지를 전송합니다.
 
     if message.content.startswith('루사야 여자친구'):
         await message.channel.send("ㅋㅋ")
@@ -69,7 +71,6 @@ if message.content.startswith('루사야 감도'):
 
     if message.content.startswith('루사야 유튜브'):
         await message.channel.send("https://www.youtube.com/channel/UC_xt16WauJu5CJoHF_59Vug")
-
     
     if message.content.startswith('루사야 나봇'):
         embed = discord.Embed(title="우루사 나이트봇 명령어 X 디스코드 루사봇", description="https://nightbot.tv/t/vlg_urs4/commands", color=0xff9a00) # Embed의 기본 틀(색상, 메인 제목, 설명)을 잡아줍니다
