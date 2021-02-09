@@ -179,14 +179,15 @@ async def on_reaction_add(reaction, user):
             else:
                 h = ''
             await reaction.message.remove_reaction(reaction.emoji, user)
-            embed = discord.Embed(title= '📢ㅣ공지 사항', description=(f'{reaction.message.content}'),colour=0x594841)
+            embed = discord.Embed(title= '📢ㅣ우루사 공지사항', description=(f'{reaction.message.content}'),colour=0x00BFFF)
             embed.set_author(name=client.get_user(int(326334598206324736)).name, icon_url=client.get_user(int(326334598206324736)).avatar_url)
             embed.set_footer(text='루사 봇 드림')
             await client.get_channel(int(801090822509690910)).send(h,embed=embed)
 
     if str(reaction.emoji) == ("🗑"):
         if str(user.id) == str(326334598206324736):
-                await reaction.message.delete()
+            await reaction.message.delete()
+
 
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
