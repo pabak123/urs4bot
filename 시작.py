@@ -174,7 +174,7 @@ async def on_reaction_add(reaction, user):
 
     if str(reaction.emoji) == ("📢"):
         if str(user.id) == str(326334598206324736):
-            if everyone == True:
+            if everyone == False:
                 h = '@everyone'
             else:
                 h = ''
