@@ -149,8 +149,8 @@ async def on_message(message):
 async def on_message(message):
         if message.channel.id == 801091357519249429: 
             if message.author.id == 326334598206324736: 
-            await message.add_reaction("📢")
-            await message.add_reaction("🗑")
+                await message.add_reaction("📢")
+                await message.add_reaction("🗑")
         
 @client.event
 async def on_reaction_add(reaction, user):
